@@ -1,0 +1,104 @@
+*{
+margin:0;
+padding:0;
+font-family: 'Special Elite', cursive;
+font-size:20px;
+}
+
+.grid{
+width:100vw;
+height:100vh;
+display:grid;
+grid-template-rows:60px 1fr;
+grid-template-columns:1fr 200px  200px;
+grid-template-areas:'header header header'
+		    'main main main';
+
+background-image: url("matrix.jpg");
+background-position: center;
+background-attachment:fixed;
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+header{
+grid-area:header;
+background-color:rgba(13,13,13,0.6);
+color:white;
+}
+
+header a{
+display:flex;
+margin-left:20px;
+margin-top:15px;
+font-weight:bold;
+font-size:20px;
+}
+
+main{
+grid-area:main;
+display:flex;
+flex-wrap:wrap;
+}
+
+.form_container{
+position:relative;
+display:flex;
+width: 300px;
+height:320px;
+margin:auto;
+background-color:rgba(13,13,13,0.8);
+}
+
+.form_nazov{
+position:absolute;
+top:10px;
+left:10px;
+color:white;
+height:35px;
+font-size:15px;
+}
+
+form, div{
+margin:auto;
+}
+
+input{
+border:0px;
+border-radius:0px;
+width:235px;
+padding-left:5px;
+height:35px;
+}
+
+.vstup{
+width:240px;
+height:60px;
+}
+
+.tlacidlo{
+width:240px;
+height:40px;
+background-color:red;
+}
+
+button{
+width:240px;
+height:40px;
+background-color:#009933;
+border:0;
+color:white;
+}
+
+button:hover{
+background-color:#00cc44;
+cursor:pointer;
+}
+
+.sprava{
+width:240px;
+height:40px;
+color:white;
+margin:auto;
+color:red;
+}

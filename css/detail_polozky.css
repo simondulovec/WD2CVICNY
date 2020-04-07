@@ -1,0 +1,296 @@
+*{
+margin:0;
+padding:0;
+font-family: 'Special Elite', cursive;
+font-size:20px;
+}
+
+
+.grid{
+height:100vh;
+width:100vw;
+display: grid;
+grid-template-rows:60px 1fr;
+grid-template-columns:1fr 200px 300px;
+grid-template-areas:'header header header'
+		    'main main section';
+}
+body{
+background-image: url("pozadie_admin.jpg");
+background-attachment:fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+header{
+grid-area:header;
+position:relative;
+background-color:rgba(13,13,13,0.6);
+color:white;
+display:flex;
+}
+
+header a{
+font-size:25px;
+margin-left:20px;
+margin-top:20px;
+}
+
+header button{
+background-color:#0066ff;
+width:150px;
+height:35px;
+border:0;
+margin-left:50px;
+margin-top:13px;
+}
+
+header button:hover{
+background-color:#3385ff;
+cursor:pointer;
+}
+
+header button span{
+font-size:50px;
+margin-left:7px;
+font-size:20px;
+margin-top:4px;
+}
+
+main{
+grid-area:main;
+display:flex;
+flex-wrap:wrap;
+}
+
+.polozka{
+width:250px;
+height:320px;
+background-color:rgba(13,13,13,0.6);
+margin:20px;
+position:relative;
+}
+
+.polozka a{
+display:block;
+font-size:20px;
+margin-left:10px;
+margin-top:10px;
+overflow-wrap: break-word;
+}
+
+.polozka a,span{
+color:white;
+}
+
+.obrazok{
+width:250px;
+height:150px;
+background-color:green;
+}
+
+img{
+max-width:100%;
+max-height:100%;
+}
+
+button{
+display:flex;
+}
+
+.tlacidlo{
+position:absolute;
+background:#0066ff;
+width:45px;
+height:30px;
+border:0;
+color:white;
+font-size:30px;
+}
+
+.tlacidlo:hover{
+background-color:#3385ff;
+cursor:pointer;
+}
+
+
+.pridaj_pocet{
+left:140px;
+top:185px;
+background:#0066ff;
+}
+
+.pridaj_pocet span{
+margin-top:3px;
+margin-left:15px;
+font-size:30px;
+
+}
+
+.odober_pocet{
+left:190px;
+top:185px;
+}
+
+.odober_pocet span{
+margin-top:5px;
+margin-left:14px;
+font-size:27px;
+
+}
+
+.zmaz_polozku{
+position:absolute;
+background-color:#cc0000;
+border:0;
+width:110px;
+height:35px;
+color:white;
+font-size:20px;
+left:130px;
+top:275px;
+}
+
+.upravit_polozku{
+position:absolute;
+background-color:#009933;
+border:0;
+width:110px;
+height:35px;
+color:white;
+font-size:20px;
+left:10px;
+top:275px;
+}
+
+.zmaz_polozku:hover{
+background-color:#ff0000;
+cursor:pointer;
+}
+
+.upravit_polozku:hover{
+background-color:#00cc44;
+cursor:pointer;
+}
+
+.zmaz_polozku span{
+margin-top:5px;
+margin-left:18px;
+}
+
+.upravit_polozku span{
+margin-top:5px;
+margin-left:15px;
+}
+
+section{
+grid-area:section;
+}
+
+#side_menu{
+margin-top:20px;
+background-color:rgba(13,13,13,0.6);
+max-height:100%;
+}
+
+section .zrus_formular{
+display:flex;
+background-color:#cc0000;
+width:30px;
+height:30px;
+border:0;
+margin-bottom:10px;
+}
+
+section .zrus_formular:hover{
+background-color:#ff0000;
+cursor:pointer;
+}
+
+section span{
+color:white;
+font-size:35px;
+margin-left:3px;
+}
+
+#nazov, #pocet, #cena ,#vytvor_polozku{
+margin-top:20px;
+margin-left:20px;
+width:250px;
+height:35px;
+border:0
+}
+
+#vytvor_polozku{
+background-color:#009933;
+border:0;
+}
+
+#vytvor_polozku span{
+font-size:20px;
+margin-top:5px;
+margin-left:30px;
+}
+
+#vytvor_polozku:hover{
+background-color:#00cc44;
+cursor:pointer;
+}
+
+#upravy_nazov, #upravy_pocet, #upravy_cena ,#potvrdit_upravy{
+margin-bottom:20px;
+margin-left:20px;
+width:250px;
+height:35px;
+border:0
+}
+
+#potvrdit_upravy{
+margin-top:20px;
+background-color:#009933;
+border:0;
+}
+
+#potvrdit_upravy span{
+font-size:20px;
+margin-top:5px;
+margin-left:75px;
+}
+
+#potvrdit_upravy:hover{
+background-color:#00cc44;
+cursor:pointer;
+}
+
+label{
+color:white;
+margin-left:20px;
+padding-top:50px;
+}
+
+#hl_menu{
+position:absolute;
+right:50px;
+}
+
+#spat{
+width:150px;
+background-color:#009933;
+}
+
+#spat span{
+font-size:20px;
+margin-left:10px;
+margin-top:8px;
+}
+
+#spat:hover{
+background-color:#00cc44;
+cursor:pointer;
+}
+
+
+
+
+

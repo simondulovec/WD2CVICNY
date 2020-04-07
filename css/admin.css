@@ -1,0 +1,109 @@
+*{
+margin:0;
+padding:0;
+font-family: 'Special Elite', cursive;
+font-size:20px;
+}
+
+body{
+background-image: url("pozadie_admin.jpg");
+background-position: center;
+background-attachment:fixed;
+background-repeat: no-repeat;
+background-size:cover;
+
+}
+
+.grid{
+display:grid;
+width:100vw;
+height:100vh;
+grid-template-rows:60px 1fr 40px;
+grid-template-areas:'header header header'
+	            'main main main';
+}
+
+header{
+grid-area:header;
+position:relative;
+background-color:rgba(13,13,13,0.6);
+display:flex;
+color:white;
+}
+
+header a{
+margin:20px;
+font-size:20px;
+}
+
+header form {
+ background:red;
+ position:absolute;
+ top:13px;
+ right:50px;
+}
+
+header form input{
+background-color:#009933;
+width:150px;
+height:35px;
+border:0;
+color:white;
+font-size:20px;
+}
+
+header form input:hover{
+background-color:#00cc44;
+cursor:pointer;
+}
+
+
+main{
+grid-area:main;
+display:flex;
+flex-wrap:wrap;
+}
+
+.karta{
+width:200px;
+height:230px;
+background-color:rgba(13,13,13,0.6);
+margin:20px;
+}
+
+.karta a{
+margin-top:10px;
+margin-left:10px;
+width:200px;
+height:20px;
+color:white;
+display:block;
+font-size:20px;
+}
+
+.obrazok{
+margin-top:5px;
+width=200px;
+height=150px;
+}
+
+img{
+max-height:100%;
+max-width:100%;
+}
+
+.karta button{
+background-color:#009933;
+width:180px;
+height:35px;
+border:0;
+color:white;
+font-size:20px;
+margin-left:10px;
+margin-top:20px;
+}
+
+.karta button:hover{
+background-color:#00cc44;
+cursor:pointer;
+}
